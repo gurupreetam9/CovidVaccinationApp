@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CovidVaccination"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name = ".Register"
+            android:exported="false"
+            android:label="Register"
+            android:theme="@style/Theme.CovidVaccination"/>
+        <activity
+            android:name = ".EmpHome"
+            android:exported="false"
+            android:label="Employee Home Page"
+            android:theme="@style/Theme.CovidVaccination"/>
+        <activity
+            android:name = ".EmpAddSlots"
+            android:exported="false"
+            android:label="Add slots"
+            android:theme="@style/Theme.CovidVaccination"/>
+        <activity
+            android:name = ".CheckUsers"
+            android:exported="false"
+            android:label="Check users"
+            android:theme="@style/Theme.CovidVaccination"/>
+        <activity
+            android:name = ".UserHome"
+            android:exported="false"
+            android:label="User Home Page"
+            android:theme="@style/Theme.CovidVaccination"/>
+        <activity
+            android:name = ".UserDetails"
+            android:exported="false"
+            android:label="User Home Page"
+            android:theme="@style/Theme.CovidVaccination"/>
+        <activity
+            android:name = ".CheckBookedSlots"
+            android:exported="false"
+            android:label="User Home Page"
+            android:theme="@style/Theme.CovidVaccination"/>
+        <activity
+            android:name = ".UserSlotsBooked"
+            android:exported="false"
+            android:label="User Home Page"
+            android:theme="@style/Theme.CovidVaccination"/>
+        <activity
+            android:name = ".ResetPassword"
+            android:exported="false"
+            android:label="User Home Page"
+            android:theme="@style/Theme.CovidVaccination"/>
+    </application>
+
+</manifest>

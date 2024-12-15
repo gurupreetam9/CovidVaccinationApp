@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Covid Vaccination</string>
+    <string name="forgot"><u>Forgot Password</u></string>
+    <string name="Login">Login</string>
+    <string name="register">No account yet?<b> Register here</b></string>
+    <string-array name="state_options">
+            <item>Not Vaccinated</item>
+            <item>Vaccinated 1 time</item>
+            <item>Vaccinated 2 time</item>
+    </string-array>
+
+</resources>

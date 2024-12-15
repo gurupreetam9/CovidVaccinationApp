@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".UserDetails"
+    android:background="@color/background_light">
+
+    <ImageButton
+        android:id="@+id/prev"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/left_arrow"
+        tools:layout_editor_absoluteY="16dp"
+        android:contentDescription="Go to previous page" />
+
+    <ImageView
+        android:id="@+id/userProfile"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/account" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userProfile"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <!-- Name Row -->
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name:"
+                android:textStyle="bold"
+                android:layout_marginEnd="8dp" />
+            <TextView
+                android:id="@+id/NameValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/>
+        </TableRow>
+
+        <!-- Username Row -->
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username:"
+                android:textStyle="bold"
+                android:layout_marginEnd="8dp" />
+            <TextView
+                android:id="@+id/usernameValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+        </TableRow>
+
+        <!-- City Row -->
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="City:"
+                android:textStyle="bold"
+                android:layout_marginEnd="8dp" />
+            <TextView
+                android:id="@+id/cityValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+        </TableRow>
+
+        <!-- State Row -->
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="State:"
+                android:textStyle="bold"
+                android:layout_marginEnd="8dp" />
+            <TextView
+                android:id="@+id/stateValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+        </TableRow>
+
+        <!-- Phone No Row -->
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone No:"
+                android:textStyle="bold"
+                android:layout_marginEnd="8dp" />
+            <TextView
+                android:id="@+id/phone_noValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+        </TableRow>
+
+        <!-- Vaccination Status Row -->
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vaccination Status:"
+                android:textStyle="bold"
+                android:layout_marginEnd="8dp" />
+            <TextView
+                android:id="@+id/VaccinationStatusValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+        </TableRow>
+
+    </TableLayout>
+</RelativeLayout>

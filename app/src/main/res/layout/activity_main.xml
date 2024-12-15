@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity"
+    android:background="@color/background_light">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="300dp"
+        android:layout_margin="26dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        android:padding="16dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="26dp"
+            android:gravity="center"
+            android:background="@android:color/transparent">
+
+            <TextView
+                android:id="@+id/welcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:text="Welcome"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary_text" />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/welcome"
+                android:layout_marginTop="16dp"
+                android:padding="16dp"
+                android:hint="Username"
+                android:background="@drawable/edit_text_border_light" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/username"
+                android:layout_marginTop="16dp"
+                android:padding="16dp"
+                android:hint="Password"
+                android:background="@drawable/edit_text_border_light"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:id = "@+id/forgot_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/username"
+                android:text="@string/forgot"
+                android:textSize="18sp"
+                android:layout_gravity="start"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/secondary_text" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp">
+
+                <RadioButton
+                    android:id="@+id/rbUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:text="User"
+                    android:textColor="@color/primary_text" />
+
+                <RadioButton
+                    android:id="@+id/rbEmployee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Employee"
+                    android:textColor="@color/primary_text" />
+            </RadioGroup>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardContainer"
+        android:layout_margin="24dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Login"
+        android:textSize="18sp"
+        android:background="@drawable/containedbutton"
+        android:padding="12dp"
+        android:textColor="@color/button_text" />
+
+    <TextView
+        android:id = "@+id/register"
+        android:layout_width="278dp"
+        android:layout_height="66dp"
+        android:layout_below="@+id/login"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="36dp"
+        android:padding="16dp"
+        android:text="@string/register"
+        android:textColor="@color/secondary_text" />
+
+</RelativeLayout>

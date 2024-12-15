@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary_text">#000000</color> <!-- Black for dark text -->
+    <color name="secondary_text">#757575</color> <!-- Dark gray for secondary text or less prominent elements -->
+    <color name="card_background">#f5f5f5</color> <!-- Light gray for card background -->
+    <color name="button_text">#ffffff</color> <!-- White for button text -->
+    <color name="background_light">#ffffff</color> <!-- White for overall screen background -->
+
+</resources>
